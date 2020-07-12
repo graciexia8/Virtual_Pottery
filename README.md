@@ -15,7 +15,7 @@ I plan on then using these references to create UV Maps and Models in Blender. T
 
 Right now though, I'm focused on the design and creation of these virtual pots :)
 
-Resources Used:
-http://learnwebgl.brown37.net/index.html
-https://youtu.be/vMPGTTVqlUA
+Resources Used: <br />
+http://learnwebgl.brown37.net/index.html <br />
+https://youtu.be/vMPGTTVqlUA <br />
 https://www.youtube.com/playlist?list=PLjcVFFANLS5zH_PeKC6I8p0Pt1hzph_rt
