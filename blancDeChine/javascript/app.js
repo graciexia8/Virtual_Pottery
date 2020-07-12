@@ -1,9 +1,9 @@
 
 window.InitDemo = async function() {
 	try {
-		const vertexShader = await loadTextResource("../../blancDeChine/Shaders/shader.vs.glsl");
-		const fragmentShader = await loadTextResource("../../blancDeChine/Shaders/shader.fs.glsl");
-		const modelData = await loadJSONResource("../../models/json_models/blancDeChine.json");
+		const vertexShader = await loadTextResource("./../blancDeChine/Shaders/shader.vs.glsl");
+		const fragmentShader = await loadTextResource("./../blancDeChine/Shaders/shader.fs.glsl");
+		const modelData = await loadJSONResource("./../models/json_models/blancDeChine.json");
 		runDemo(vertexShader, fragmentShader, modelData);
 	}
 	catch(e){
