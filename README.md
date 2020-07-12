@@ -12,4 +12,4 @@ I plan on then using these references to create UV Maps and Models in Blender. T
 Right now though, I'm focused on the design and creation of these virtual pots :)
 
 *Update, I was able to make my first virtual ceramic, a Blanc de Chine teacup 
-
+![](gifs/blancDeChine.gif)
