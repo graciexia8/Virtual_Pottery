@@ -1,5 +1,5 @@
 # Virtual_Pottery
-View Demo Here :D :
+View Demo Here :D 
 
 https://graciexia8.github.io/Virtual_Pottery
 
