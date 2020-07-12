@@ -14,3 +14,8 @@ https://graciexia.co/virtualpottery
 I plan on then using these references to create UV Maps and Models in Blender. Then I will export them as .JSON files and hook it up to the broswer using the WebGL API. The final result might be an interactive gallery, I have not yet decided, maybe even a timeline that can create a narrative of Chinese history using ceramics. I don't plan on using any additional graphics libraries such as Three.js other than maybe a matrix library to help me do some linear algebra. This project is meant to be an application of all the WebGL knowledge I've acquired in the last three months. So I'm going to sit through make the shaders, hookup the files, write the Javascript on my own.
 
 Right now though, I'm focused on the design and creation of these virtual pots :)
+
+Resources Used:
+http://learnwebgl.brown37.net/index.html
+https://youtu.be/vMPGTTVqlUA
+https://www.youtube.com/playlist?list=PLjcVFFANLS5zH_PeKC6I8p0Pt1hzph_rt
