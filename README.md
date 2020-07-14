@@ -18,4 +18,5 @@ Right now though, I'm focused on the design and creation of these virtual pots :
 Resources Used: <br />
 http://learnwebgl.brown37.net/index.html <br />
 https://youtu.be/vMPGTTVqlUA <br />
-https://www.youtube.com/playlist?list=PLjcVFFANLS5zH_PeKC6I8p0Pt1hzph_rt
+https://www.youtube.com/playlist?list=PLjcVFFANLS5zH_PeKC6I8p0Pt1hzph_rt <br />
+http://www.cs.toronto.edu/~jacobson/phong-demo/ <br />
