@@ -18,7 +18,7 @@ window.createModel = function (modelObj) {
     // Vertex data
     model.vertices = modelObj.meshes[0].vertices;
     // White for Blanc de Chine
-	model.color = new Float32Array( [0.95, 0.96, 0.80, 1.0]); 
+	model.color = new Float32Array( [0.95, 0.96, 0.90, 1.0]); 
 	model.normals = modelObj.meshes[0].normals;
     
     return model;
