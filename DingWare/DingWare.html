@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #000000;
+    }
+    h3 {font-family: Helvetica, sans-serif;
+        color: #fff;
+        font-size: x-large;
+       }
+    p {
+      color: #fff;
+      font-family: sans-serif;
+    }
+  </style>
+
+</head>
+
+<body onload="InitDemo();">
+    <h3 font-fam>Ding Ware</h3>
+    <p>Click and Drag to rotate the model</p>
+    <canvas id = "game-surface" width="700" height="400" >
+        browser does not support html5
+    </canvas>
+    <img id="textureImage" src="image.png" width="0" height="0"></img>
+
+    <script src="../lib/gl-matrix.js"></script>
+    <script src="../lib/helper.js"></script>
+    <script src="javascript/model.js"></script>
+    <script src="javascript/render.js"></script>
+    <script src="javascript/handlers.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
