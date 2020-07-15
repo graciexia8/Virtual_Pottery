@@ -1,3 +1,4 @@
+"use strict";
 
 window.InitDemo = async function() {
 	try {

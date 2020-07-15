@@ -1,3 +1,5 @@
+"use strict";
+
 window.Render = function(gl, program, model, canvas){
     const self = this;
 
