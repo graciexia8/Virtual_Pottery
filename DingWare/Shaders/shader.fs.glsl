@@ -2,11 +2,11 @@
       precision mediump float;
       
       const vec3 lightDirection = normalize(vec3(0.0, 1.8, 1.8));
-      const vec3 lightColor = vec3(1.0, 1.0, 1.0);
+      const vec3 lightColor = vec3(0.95, 0.84, 0.9);
       const vec3 ambientColor = vec3(0.5, 0.2, 0.7);
       const float ambientPecentage = 0.25;
     
-      const float shininess = 4.5;
+      const float shininess = 20.5;
       // uniform sampler2D u_sampler;
 
       uniform vec4 u_Color;
@@ -61,7 +61,7 @@
         reflection = normalize( reflection );
         to_camera = normalize( to_camera );
         cos_angle = dot(reflection, to_camera);
-        cos_angle = clamp(cos_angle, 0.0, 0.8);
+        cos_angle = clamp(cos_angle, 0.0, 0.92);
         cos_angle = pow(cos_angle, shininess);
 
         // The specular color is from the light source, not the object
