@@ -79,7 +79,7 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
 		 mat4.multiply(vmMatrix, viewMatrix, modelMatrix);
 		 mat4.multiply(pvmMatrix, projMatrix, vmMatrix);
 		 
-		 objectsInScene.render(gl, program, model, pvmMatrix, vmMatrix);
+		 objectsInScene.render(gl, program, model, pvmMatrix, vmMatrix, light);
 
 	}
 	
@@ -144,7 +144,10 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
 
 	// Create a model with ll buffer objects available.
 	const model = createModel(modelText);
-	const objectsInScene = new Render(gl, program, model, self.canvas);
+	// Create light model
+	const light = createLight();
+
+	const objectsInScene = new Render(gl, program, model, self.canvas, light);
 
 	const events = new eventHandler(self);
 	events.animate();

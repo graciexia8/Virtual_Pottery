@@ -1,6 +1,6 @@
 "use strict";
 
-window.Render = function(gl, program, model, canvas){
+window.Render = function(gl, program, model, canvas, lightModel){
     const self = this;
 
     function _createBufferObject(gl, data) {
@@ -47,9 +47,16 @@ window.Render = function(gl, program, model, canvas){
 
     }
 
-    self.render = function (gl, program, model, pvmMatrix, vmMatrix) {
+    self.render = function (gl, program, model, pvmMatrix, vmMatrix, light) {
         // Get uniform locations of things
         const u_Color_location  = gl.getUniformLocation(program, 'u_Color');
+        
+        // Get Light Model locations of things
+        const u_light_direction = gl.getUniformLocation(program, 'u_light_Direction');
+        const u_light_colour = gl.getUniformLocation(program, 'u_light_Color');
+        const u_ambient_Color = gl.getUniformLocation(program, 'u_ambient_Color');
+        const u_ambient_Percentage = gl.getUniformLocation(program, 'u_ambient_Percentage');
+        const u_shininess = gl.getUniformLocation(program, 'u_shininess');
 
         // Get the attribute locations of the vertices and texture coordinates from shaders
         const positionAttribLocation = gl.getAttribLocation(program, 'vertPosition');
@@ -130,6 +137,13 @@ window.Render = function(gl, program, model, canvas){
 
         // Set the color for all of the triangle faces
         gl.uniform4fv(u_Color_location, model.color);
+
+        // Set Lighting Model information
+        gl.uniform3fv(u_light_direction, light.direction);
+        gl.uniform3fv(u_light_colour, light.color);
+        gl.uniform3fv(u_ambient_Color, light.ambientColor);
+        gl.uniform1f(u_ambient_Percentage, light.ambientPercentage);
+        gl.uniform1f(u_shininess, light.shininess);
 
         // set the new pvm and vm matrices since our model matrix changes
         gl.uniformMatrix4fv(pvmUniformLocation, false, pvmMatrix);
