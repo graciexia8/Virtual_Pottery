@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1440px) {
+    .nav {
+        width:280px;
+    }
+
+    .title {
+        font-size: 26px;
+        padding-bottom: 20px;
+        height: 5%;
+    }
+
+    .navigation-links {
+        height: 80%;
+        font-size: 16px;
+    }
+
+    .credits {
+        height: 5%;
+        padding-bottom: 15px;
+        vertical-align: bottom;
+        font-size: 14px;
+    }
+
+    .social-media {
+        height: 5%;
+        padding-bottom: 15px;
+        vertical-align: bottom;
+        font-size: 14px;
+    }
+
+    .nav-placeholder {
+        width: 320px;  
+    }
+}
+
+@media only screen and (min-width: 1740px) {
+    .description h1 {
+        font-size: 64px;
+        top: 0.8em;
+    }
+    
+    .description h2 {
+        font-size: 32px;
+    }
+    
+    .description h4 {
+        font-size: 14px;
+    }
+    
+    .description h5 {
+        font-size: 14px;
+    }
+    
+    .description p {
+        font-size: 18px;
+    }
+}
