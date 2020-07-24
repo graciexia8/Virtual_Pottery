@@ -53,7 +53,16 @@
     font-weight: 400;
     font-size: 12px;
     padding-bottom: 30px;
-    color: #F2F2F2;
+    color:#b3b3b3;
+    letter-spacing: 2px;
+    animation: fadeIn 3s ease;
+}
+
+.description h5 {
+    font-family: 'Ubuntu mono';
+    font-size: 12px;
+    padding-bottom: 20px;
+    color: #696969;
     letter-spacing: 2px;
     animation: fadeIn 3s ease;
 }
