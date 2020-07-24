@@ -1,0 +1,60 @@
+.description-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #161616;
+    border: 1px;
+    height: 100vh;
+}
+
+#game-surface {
+    align-self: center;
+    animation: fadeIn 2s ease;
+}
+
+.description {
+    padding-left: 30px;
+    align-self: center;
+    font-family: "ubuntu mono";
+    color: #f2f2f2;
+    max-width: 500px;
+}
+
+h1 {
+    font-family: 'Ubuntu mono';
+    font-weight: 800;
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #F2F2F2;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease;
+    position: absolute;
+}
+
+.description h2 {
+    font-family: 'Ubuntu mono';
+    font-weight: 800;
+    font-size: 22px;
+    padding-bottom: 20px;
+    color: #F2F2F2;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease;
+}
+
+.description h4 {
+    font-family: 'Ubuntu mono';
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 30px;
+    color: #F2F2F2;
+    letter-spacing: 2px;
+    animation: fadeIn 3s ease;
+}
+
+.description p {
+    font-family: 'Ubuntu mono';
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #F2F2F2;
+    animation: fadeIn 2s ease;
+}

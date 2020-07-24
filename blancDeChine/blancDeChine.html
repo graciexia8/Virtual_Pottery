@@ -4,29 +4,55 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: #000000;
-    }
-    h3 {font-family: Helvetica, sans-serif;
-        color: #fff;
-        font-size: x-large;
-       }
-    p {
-      color: #fff;
-      font-family: sans-serif;
-    }
-  </style>
-
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/description.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 
 <body onload="InitDemo();">
-    <h3 font-fam>Blanc De Chine</h3>
-    <p>Click and Drag to rotate the model</p>
-    <canvas id = "game-surface" width="700" height="400" >
-        browser does not support html5
-    </canvas>
+      <div class="nav">
+        <h2 class="title"><a href="../index.html">Virtual Pottery.</a></h2>
+        <ul class="navigation-links">
+          <a href=''><li>Neolithics</li></a>
+          <a href=''><li>San Cai Ware</li></a>
+          <a href=''><li>Ding Ware</li></a>
+          <a href=''><li>Guan Ware</li></a>
+          <a href=''><li>Ji Zhou Ware</li></a>
+          <a href=''><li>Qing Bai Ware</li></a>
+          <a href='blancDeChine/blancDeChine.html' style="text-decoration: underline;"><li>Blanc de Chine</li></a>
+          <a href=''><li>Blue & White</li></a>
+          <a href=''><li>Colour Ceramic</li></a>
+        </ul>
+      <div class="social-media">
+        <ul class="social-media-list">
+          <li><a href='https://github.com/graciexia8' target="_blank">Github</a></li>
+          <li><a href="https://graciexia.myportfolio.com/" target="_blank">Website</a></li>
+          <li><a href="https://www.linkedin.com/in/graciexiaa/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="credits">
+        <p>By Gracie Xia.</p>
+      </div>
+    </div>
 
+    <div class="content">
+      <div class="nav-placeholder">yo</div>
+      <div class ="description-container">
+        <canvas id = "game-surface" width="500" height="500" >
+          browser does not support html5
+        </canvas>
+        <div class="description">
+          <h2>Blanc De Chine</h2>
+          <h4>3000 - 2000 BC</h4>
+          <p>Blanc de Chine (French for "White from China"), is a type of white Chinese porcelain,
+             made at Dehua in the Fujian province. It has been produced from the Ming dynasty (1368–1644) 
+             to the present day. Large quantities arrived in Europe as Chinese export porcelain in the 
+             early 18th century and it was copied at Meissen and elsewhere. It was also exported to Japan 
+             in large quantities.</p>
+        </div>
+      </div>
+    </div>
     <script src="../lib/gl-matrix.js"></script>
     <script src="../lib/helper.js"></script>
     <script src="javascript/model.js"></script>

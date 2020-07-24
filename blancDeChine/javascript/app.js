@@ -57,7 +57,7 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
 	//-----------------------------------------------------------------------
 	self.render = function () {
 		// Clear the color buffer and depth buffer so program can do hidden surface removal
-		gl.clearColor(0.0, 0.0, 0.0, 0.0);
+		gl.clearColor(0.0, 0.0, 0.0, 1.0);
 		gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
  
 		 // Set the model, view, projection matrices
@@ -94,7 +94,7 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
 	}
 
 	// Clear the color buffer and depth buffer so program can do hidden surface removal
-	gl.clearColor(0.0, 0.0, 0.0, 0.0);
+	gl.clearColor(0.0, 0.0, 0.0, 1.0);
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 	gl.enable(gl.DEPTH_TEST); // Enable hidden surface removel
 	gl.enable(gl.CULL_FACE);
