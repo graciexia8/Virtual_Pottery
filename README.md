@@ -15,6 +15,11 @@ I plan on then using these references to create UV Maps and Models in Blender. T
 
 Right now though, I'm focused on the design and creation of these virtual pots :)
 
+Eventually, I want my final product to look something like this:
+
+![](Mockups/MacBook - 1.png)
+![](Mockups/MacBook - 3.png)
+
 Resources Used: <br />
 http://learnwebgl.brown37.net/index.html <br />
 https://youtu.be/vMPGTTVqlUA <br />
