@@ -29,7 +29,7 @@ a:hover {
 
 .title {
     order 1;
-    font-family: 'Ubuntu mono' 'Ubuntu' sans-serif;
+    font-family: 'Ubuntu mono';
     font-weight: 800;
     font-size: 22px;
     padding-bottom: 20px;
@@ -41,7 +41,7 @@ a:hover {
 
 .navigation-links {
     order: 2;
-    font-family: 'Ubuntu mono''Ubuntu' sans-serif;
+    font-family: 'Ubuntu mono';
     font-weight: 400;
     font-size: 14px;
     list-style: none;
@@ -57,7 +57,7 @@ a:hover {
 
 .credits {
     order: 4;
-    font-family: 'Ubuntu mono''Ubuntu' sans-serif;
+    font-family: 'Ubuntu mono';
     font-weight: 400;
     font-size: 12px;
     color: #F2F2F2;
@@ -68,7 +68,7 @@ a:hover {
 
 .social-media {
     order: 3;
-    font-family: 'Ubuntu mono''Ubuntu' sans-serif;
+    font-family: 'Ubuntu mono';
     font-size: 12px;
     height: 10%;
     color: #F2F2F2;
