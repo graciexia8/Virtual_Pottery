@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1200px) {
+    .gallery {
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-placeholder {
+        display: none;
+    }
+
+    .gallery-card {
+        width: 400px;
+        height: 400px;
+    }
+
+    .content {
+        justify-content: center;
+        padding-top: 75px;
+    }
+
+    .description-container {
+        flex-direction: column;
+    }
+
+    .description h1 {
+        position: static;
+        font-size: 16px;
+    }
+
+    .description h5 {
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .description h2 {
+        font-size: 44px;
+    }
+
+    .description h4 {
+        font-size: 16px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+}

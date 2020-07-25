@@ -135,3 +135,32 @@ a:hover {
       transform: translateX(0);
     }
   }
+
+.mobile-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #161616;
+    display: none;
+    height: 100 px;
+    text-align: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.hamburger-menu {
+    order: -1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.mobile-title {
+    font-family: 'Ubuntu mono';
+    font-weight: 800;
+    font-size: 22px;
+    color: #F2F2F2;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
