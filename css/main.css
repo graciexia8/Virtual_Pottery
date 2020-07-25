@@ -86,6 +86,11 @@ a:hover {
     flex-direction: row;
 }
 
+.content-model {
+    display: flex;
+    flex-direction: row;
+}
+
 .nav-placeholder {
     display: block;
     width: 300px;
