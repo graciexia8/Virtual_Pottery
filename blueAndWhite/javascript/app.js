@@ -1,9 +1,10 @@
+"use strict";
 
 window.InitDemo = async function() {
 	try {
-		const vertexShader = await loadTextResource("./../DingWare/Shaders/shader.vs.glsl");
-		const fragmentShader = await loadTextResource("./../DingWare/Shaders/shader.fs.glsl");
-		const modelData = await loadJSONResource("./../models/json_models/dingWare3.json");
+		const vertexShader = await loadTextResource("./../blueAndWhite/Shaders/shader.vs.glsl");
+		const fragmentShader = await loadTextResource("./../blueAndWhite/Shaders/shader.fs.glsl");
+		const modelData = await loadJSONResource("./../models/json_models/blueAndWhiteWare.json");
 		runDemo(vertexShader, fragmentShader, modelData);
 	}
 	catch(e){
@@ -56,7 +57,7 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
 	//-----------------------------------------------------------------------
 	self.render = function () {
 		// Clear the color buffer and depth buffer so program can do hidden surface removal
-		gl.clearColor(0.0, 0.0, 0.0, 0.0);
+		gl.clearColor(0.0, 0.0, 0.0, 1.0);
 		gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
  
 		 // Set the model, view, projection matrices
@@ -93,7 +94,7 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
 	}
 
 	// Clear the color buffer and depth buffer so program can do hidden surface removal
-	gl.clearColor(0.0, 0.0, 0.0, 0.0);
+	gl.clearColor(0.0, 0.0, 0.0, 1.0);
 	gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 	gl.enable(gl.DEPTH_TEST); // Enable hidden surface removel
 	gl.enable(gl.CULL_FACE);
@@ -143,7 +144,10 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
 
 	// Create a model with ll buffer objects available.
 	const model = createModel(modelText);
-	const objectsInScene = new Render(gl, program, model, self.canvas);
+	// Create light model
+	const light = createLight();
+
+	const objectsInScene = new Render(gl, program, model, self.canvas, light);
 
 	const events = new eventHandler(self);
 	events.animate();

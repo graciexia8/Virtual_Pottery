@@ -3,13 +3,13 @@
       uniform vec4 u_Color;
 
       attribute vec3 vertPosition;
-      // attribute vec2 vertTexCoord;
+      attribute vec2 vertTexCoord;
       attribute vec3 vertNormal;
 
       // Data (to be interpolated) that is passed on to the fragment shader
       varying vec3 v_Vertex;
       varying vec3 v_Normal;
-      // varying vec2 fragTexCoord;
+      varying vec2 fragTexCoord;
       
       uniform mat4 vm_matrix;
       uniform mat4 matrix;
@@ -24,7 +24,7 @@
         // and pass this normal vector to the fragment shader.
         v_Normal = vec3( vm_matrix * vec4(vertNormal, 0.0) );
 
-        // fragTexCoord = vertTexCoord;
+        fragTexCoord = vertTexCoord;
         gl_Position = matrix * vec4(vertPosition, 1.0);
     
     }

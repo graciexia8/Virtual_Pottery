@@ -1,16 +1,13 @@
       // Fragment shader program
       precision mediump float;
-      
-      const vec3 lightDirection = normalize(vec3(0.0, 1.8, 1.8));
-      const vec3 lightColor = vec3(0.95, 0.84, 0.9);
-      const vec3 ambientColor = vec3(0.5, 0.2, 0.7);
-      const float ambientPecentage = 0.25;
     
-      const float shininess = 20.5;
-      // uniform sampler2D u_sampler;
-
+      uniform sampler2D u_sampler;
       uniform vec4 u_Color;
-
+      uniform vec3 u_light_Direction;
+      uniform vec3 u_light_Color;
+      uniform vec3 u_ambient_Color;
+      uniform float u_ambient_Percentage;
+      uniform float u_shininess;
 
       // Data (to be interpolated) that is passed on to the fragment shader
       varying vec3 v_Vertex;
@@ -30,12 +27,12 @@
         vec3 specular_color;
         vec3 color;
 
-        // vec4 texel = texture2D(u_sampler, fragTexCoord);
+        vec4 texel = texture2D(u_sampler, fragTexCoord);
 
-        ambient_color = (ambientPecentage * ambientColor) * u_Color.xyz;
+        ambient_color = (u_ambient_Percentage * u_ambient_Color) * texel.xyz;
 
         // Calculate a vector from the fragment location to the light source
-        to_light = lightDirection - v_Vertex;
+        to_light = normalize(u_light_Direction) - v_Vertex;
         to_light = normalize( to_light );
       
         // The vertex's normal vector is being interpolated across the primitive
@@ -45,9 +42,9 @@
         // Calculate the cosine of the angle between the vertex's normal vector
         // and the vector going to the light.
         cos_angle = dot(vertex_normal, to_light);
-        cos_angle = clamp(cos_angle, 0.5, 0.8);
+        cos_angle = clamp(cos_angle, 0.0, 1.0);
 
-        diffuse_color =  u_Color.xyz * cos_angle;
+        diffuse_color =  texel.xyz * cos_angle;
       
         // Calculate the reflection vector
         reflection = 2.0 * dot(vertex_normal, to_light) * vertex_normal - to_light;
@@ -61,12 +58,12 @@
         reflection = normalize( reflection );
         to_camera = normalize( to_camera );
         cos_angle = dot(reflection, to_camera);
-        cos_angle = clamp(cos_angle, 0.0, 0.92);
-        cos_angle = pow(cos_angle, shininess);
+        cos_angle = clamp(cos_angle, 0.0, 1.0);
+        cos_angle = pow(cos_angle, u_shininess);
 
         // The specular color is from the light source, not the object
         if (cos_angle > 0.0) {
-          specular_color = lightColor * cos_angle;
+          specular_color = u_light_Color * cos_angle;
           diffuse_color = diffuse_color * (1.0 - cos_angle);
         } else {
           specular_color = vec3(0.0, 0.0, 0.0);
@@ -74,5 +71,5 @@
 
         color = ambient_color + diffuse_color + specular_color;
 
-        gl_FragColor = vec4(color,  u_Color.a);
+        gl_FragColor = vec4(color,  texel.a);
       }
