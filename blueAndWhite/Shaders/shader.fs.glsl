@@ -29,7 +29,7 @@
 
         vec4 texel = texture2D(u_sampler, fragTexCoord);
 
-        ambient_color = (u_ambient_Percentage * u_ambient_Color) * texel.xyz;
+        ambient_color = (u_ambient_Percentage * u_ambient_Color) * texel.rgb;
 
         // Calculate a vector from the fragment location to the light source
         to_light = normalize(u_light_Direction) - v_Vertex;
@@ -42,9 +42,9 @@
         // Calculate the cosine of the angle between the vertex's normal vector
         // and the vector going to the light.
         cos_angle = dot(vertex_normal, to_light);
-        cos_angle = clamp(cos_angle, 0.0, 1.0);
+        cos_angle = clamp(cos_angle, 0.5, 0.8);
 
-        diffuse_color =  texel.xyz * cos_angle;
+        diffuse_color =  texel.rgb * cos_angle;
       
         // Calculate the reflection vector
         reflection = 2.0 * dot(vertex_normal, to_light) * vertex_normal - to_light;

@@ -12,7 +12,7 @@ window.Render = function(gl, program, model, canvas, lightModel){
     let u_ambient_Color;
     let u_ambient_Percentage;
     let u_shininess;
-
+ 
     // Get the attribute locations of the vertices and texture coordinates from shaders
     let positionAttribLocation;
     let texCoordAttribLocation;
@@ -59,6 +59,7 @@ window.Render = function(gl, program, model, canvas, lightModel){
 
         let UVtexture = gl.createTexture();
         gl.bindTexture(gl.TEXTURE_2D, UVtexture);
+        gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
         // Properties of the texture object
         // gl.CLAMP_TO_EDGE: This clamps all values greater than 1.0 to 1.0 and all values less than 0.0 to 0.0. 
         // Therefore the colors at the image’s borders are repeatedly used if the texture coordinates go outside the range 0.0 to 1.0. 
@@ -191,8 +192,8 @@ window.Render = function(gl, program, model, canvas, lightModel){
         // Make the texture_object be the active texture. This binds the
         // texture_object to "texture unit" 0.
         gl.bindTexture(gl.TEXTURE_2D, boxTexture);
-        // Tell the shader program to use "texture unit" 0
-        gl.uniform1i(program.u_Sampler, 0);
+        // // Tell the shader program to use "texture unit" 0
+        // gl.uniform1i(program.u_Sampler, 0);
 
         gl.drawElements(gl.TRIANGLES, model.indices.length, gl.UNSIGNED_SHORT, 0);
 

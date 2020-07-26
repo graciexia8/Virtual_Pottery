@@ -22,7 +22,7 @@ window.createModel = function (modelObj) {
     // White for Blanc de Chine
 	model.color = new Float32Array( [0.95, 0.96, 0.92, 1.0]); 
     model.normals = modelObj.meshes[0].normals;
-    model.textureCoords = modelObj.meshes[0].texturecoords;
+    model.textureCoords = modelObj.meshes[0].texturecoords[0];
     
     return model;
   };
@@ -43,7 +43,7 @@ window.createModel = function (modelObj) {
     const lightDirection = new Float32Array([0.0, 1.8, 1.8]);
     const lightColor = new Float32Array([1.0, 1.0, 1.0]);
     const ambientColor = new Float32Array([0.5, 0.2, 0.7]);
-    const ambientPercentage = 0.15;
+    const ambientPercentage = 0;
     const lightShininess = 100.0;
     const model = new lightModel("light", lightDirection, lightColor, ambientColor, ambientPercentage, lightShininess);
 
