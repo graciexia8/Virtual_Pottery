@@ -115,7 +115,7 @@ a:hover {
     margin: 10px;
     display: block;
     background-color: black;
-    background-image: url("../img/dingWare.png");
+    background-image: url("../img/comingsoon.jpg");
     background-size: cover;
     animation: fadeIn 2s ease;
     border: 1px solid black;
@@ -123,17 +123,17 @@ a:hover {
 
 .gallery-card:hover {
     background-size: fit;
-    background-image: url("../img/dingWare.gif");
+    background-image: url("../img/comingsoon.jpg");
     border: 1px solid #f7f7f7;
 }
 
 #blancDeChine {
-    background-image: url("../img/dingWare.png");
+    background-image: url("../img/blancDeChine.png");
     background-size: cover;
 }
 
 #blancDeChine:hover {
-    background-image: url("../img/dingWare.gif");
+    background-image: url("../img/blancDeChine.gif");
     background-size: cover;
 }
 
