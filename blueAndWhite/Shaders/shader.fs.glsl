@@ -42,7 +42,7 @@
         // Calculate the cosine of the angle between the vertex's normal vector
         // and the vector going to the light.
         cos_angle = dot(vertex_normal, to_light);
-        cos_angle = clamp(cos_angle, 0.5, 0.8);
+        cos_angle = clamp(cos_angle, 0.45, 0.9);
 
         diffuse_color =  texel.rgb * cos_angle;
       
@@ -58,13 +58,13 @@
         reflection = normalize( reflection );
         to_camera = normalize( to_camera );
         cos_angle = dot(reflection, to_camera);
-        cos_angle = clamp(cos_angle, 0.0, 1.0);
+        cos_angle = clamp(cos_angle, 0.5, 1.0);
         cos_angle = pow(cos_angle, u_shininess);
 
         // The specular color is from the light source, not the object
         if (cos_angle > 0.0) {
-          specular_color = u_light_Color * cos_angle;
-          diffuse_color = diffuse_color * (1.0 - cos_angle);
+          specular_color = u_light_Color * cos_angle ;
+          diffuse_color = diffuse_color * (1.0 - cos_angle) * 1.1;
         } else {
           specular_color = vec3(0.0, 0.0, 0.0);
         }

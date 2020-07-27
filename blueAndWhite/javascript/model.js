@@ -40,11 +40,11 @@ window.createModel = function (modelObj) {
 
   // Create light model for scene
   window.createLight = function () {
-    const lightDirection = new Float32Array([0.0, 1.8, 1.8]);
-    const lightColor = new Float32Array([1.0, 1.0, 1.0]);
-    const ambientColor = new Float32Array([0.5, 0.2, 0.7]);
-    const ambientPercentage = 0;
-    const lightShininess = 100.0;
+    const lightDirection = new Float32Array([0.5, 1.8, 1.8]);
+    const lightColor = new Float32Array([1.0, 0.95, 1.0]);
+    const ambientColor = new Float32Array([0.5, 0.5, 0.9]);
+    const ambientPercentage = 0.25;
+    const lightShininess = 90.0;
     const model = new lightModel("light", lightDirection, lightColor, ambientColor, ambientPercentage, lightShininess);
 
     return model;

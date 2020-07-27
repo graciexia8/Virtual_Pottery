@@ -127,6 +127,26 @@ a:hover {
     border: 1px solid #f7f7f7;
 }
 
+#blancDeChine {
+    background-image: url("../img/dingWare.png");
+    background-size: cover;
+}
+
+#blancDeChine:hover {
+    background-image: url("../img/dingWare.gif");
+    background-size: cover;
+}
+
+#blueAndWhite {
+    background-image: url("../img/blueAndWhiteThumbnail.png");
+    background-size: cover;
+}
+
+#blueAndWhite:hover {
+    background-image: url("../img/blueandWhite.gif");
+    background-size: cover;
+}
+
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
