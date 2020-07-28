@@ -167,6 +167,17 @@ a:hover {
     background-size: cover;
 }
 
+#dingWare {
+    background-image: url("../img/dingWare.png");
+    background-size: cover;
+}
+
+#dingWare:hover {
+    background-image: url("../img/dingWare.gif");
+    background-size: cover;
+}
+
+
 
 @keyframes fadeIn {
     0% {opacity:0;}
