@@ -39,7 +39,7 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
 
 	//create a scale matrix
 	let scaleMatrix = mat4.create();
-	mat4.scale(scaleMatrix, identityMatrix, [1.3,1.3,1.3]);
+	mat4.scale(scaleMatrix, identityMatrix, [1.3,1.3,1.7]);
 
 	// Public variables that will possibly be used or changed by event handlers.
 	self.angleX = 0.0;

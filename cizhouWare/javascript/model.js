@@ -44,7 +44,7 @@ window.createModel = function (modelObj) {
     const lightColor = new Float32Array([1.0, 1.0, 0.9]);
     const ambientColor = new Float32Array([0.5, 0.5, 0.9]);
     const ambientPercentage = 0.65;
-    const lightShininess = 5.0;
+    const lightShininess = 5.8;
     const model = new lightModel("light", lightDirection, lightColor, ambientColor, ambientPercentage, lightShininess);
 
     return model;
