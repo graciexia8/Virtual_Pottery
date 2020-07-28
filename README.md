@@ -4,8 +4,6 @@ View Demo Here :D
 https://graciexia8.github.io/Virtual_Pottery
 
 *Update, some pot samples
-
-![](gifs/blancDeChine.gif)
 ![](img/colourWare.gif)
 ![](img/sancaiWare.gif)
 ![](img/blueAndWhite.gif)
