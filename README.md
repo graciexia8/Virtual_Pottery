@@ -3,9 +3,12 @@ View Demo Here :D
 
 https://graciexia8.github.io/Virtual_Pottery
 
-*Update, I was able to make my first virtual ceramic, a Blanc de Chine teacup 
+*Update, some pot samples
 
 ![](gifs/blancDeChine.gif)
+![](img/colourWare.gif)
+![](img/sancaiWare.gif)
+![](img/blueAndWhite.gif)
 
 I am currently conducting preliminary research on Chinese ceramics, including different kinds of wares throughout history, textures, lighting & patterns. I've gathered some references on different kinds of pottery and am producing concept art for myself as guidance for the models. Progress of this research can be found here:
 
