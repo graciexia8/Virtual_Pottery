@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/description.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/largeScreen.css">
+  <link rel="stylesheet" type="text/css" href="../css/smallerScreen.css">
+
+</head>
+
+<body onload="InitDemo();">
+
+      <div class="mobile-nav">
+        <h2 class="mobile-title"><a href="../index.html">Virtual Pottery.</a></h2>
+        <a href=""><img class="hamburger-menu" src="../img/menu.svg"></a>
+      </div>
+
+      <div class="nav">
+        <h2 class="title" id="mobile-title"><a href="../index.html">Virtual Pottery.</a></h2>
+        <ul class="navigation-links">
+          <a ><li>Neolithics</li></a>
+          <a href="sancaiWare.html"><li>San Cai Ware</li></a>
+          <a href="../dingWare/dingWare.html"><li>Ding Ware</li></a>
+          <a ><li>Guan Ware</li></a>
+          <a href='../cizhouWare/cizhouWare.html'><li>Ci Zhou Ware</li></a>
+          <a ><li>Ji Zhou Ware</li></a>
+          <a ><li>Qing Bai Ware</li></a>
+          <a href='../blancDeChine/blancDeChine.html'><li>Blanc de Chine</li></a>
+          <a href='../blueAndWhite/blueAndWhite.html'><li>Blue & White</li></a>
+          <a href='../colourWare/colourWare.html' stlye='text-decoration: underline;'><li>Colour Ceramic</li></a>
+        </ul>
+      <div class="social-media">
+        <ul class="social-media-list">
+          <li><a href='https://github.com/graciexia8' target="_blank">Github</a></li>
+          <li><a href="https://graciexia.myportfolio.com/" target="_blank">Website</a></li>
+          <li><a href="https://www.linkedin.com/in/graciexiaa/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="credits">
+        <p>By Gracie Xia.</p>
+      </div>
+    </div>
+
+    <div class="content-model">
+      <div class="nav-placeholder">yo</div>
+      <div class ="description-container">
+        <canvas id = "game-surface" width="500" height="500" >
+          browser does not support html5
+        </canvas>
+        <img id="textureImage" src="../models/textures/sancaiWare.png" width="0" height="0">
+        <div class="description">
+          <h5>*Interactive, drag the model around</h>
+          <h2>Sancai Ware</h2>
+          <h4>3000 - 2000 BC</h4>
+          <p>Sancai is a versatile type of decoration on Chinese pottery using glazes or slip, 
+            predominantly in the three colours of brown (or amber), green, and a creamy off-white. 
+            It is particularly associated with the Tang Dynasty (618–907) and its tomb figures, appearing around 700.
+            Therefore, it is commonly referred to as Chinese: 唐三彩 Tang Sancai in Chinese. 
+          </p>
+          <p>
+            Special thanks to Derrek Chow for providing the computer generated texture. Visit
+            <a style="text-decoration: underline;" href="https://www.derrekchow.com/" target="_blank">Derrek's Site</a> & 
+            <a style="text-decoration: underline;" href="https://observablehq.com/@derrekchow" target="_blank"> Derrek's Observable</a> 
+            for more funky things!
+          </p>
+            <h4><a href="../dingWare/dingWare.html">Next Ceramic →</a></h4>
+            <h1>Piece #2</h1>
+
+        </div>
+      </div>
+    </div>
+    <script src="../lib/gl-matrix.js"></script>
+    <script src="../lib/helper.js"></script>
+    <script src="javascript/model.js"></script>
+    <script src="javascript/render.js"></script>
+    <script src="javascript/handlers.js"></script>
+    <script src="javascript/app.js"></script>
+</body>

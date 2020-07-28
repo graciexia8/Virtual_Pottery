@@ -177,6 +177,16 @@ a:hover {
     background-size: cover;
 }
 
+#sancaiWare {
+    background-image: url("../img/sancaiWare.png");
+    background-size: cover;
+}
+
+#sancaiWare:hover {
+    background-image: url("../img/sancaiWare.gif");
+    background-size: cover;
+}
+
 
 
 @keyframes fadeIn {
