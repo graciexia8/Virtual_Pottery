@@ -187,6 +187,15 @@ a:hover {
     background-size: cover;
 }
 
+#guanWare {
+    background-image: url("../img/guanWare.png");
+    background-size: cover;
+}
+
+#guanWare:hover {
+    background-image: url("../img/guanWare.gif");
+    background-size: cover;
+}
 
 
 @keyframes fadeIn {
