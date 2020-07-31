@@ -2,10 +2,11 @@
     .gallery {
         justify-content: center;
         padding-left: 0px;
+        padding-top: 0px;
     }
 
     .mobile-nav {
-        display: flex;
+        display: block;
     }
 
     .nav {
@@ -53,8 +54,33 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .description {
         max-width: 400px;
+    }
+
+    .gallery-card {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .gallery-card {
+        max-width: 250px;
+        max-height: 250px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+
+    .gallery-card {
+        max-width: 180px;
+        max-height: 180px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -13,9 +13,26 @@
 
 <body>
 
+  <div id="mobile-nav-links">
+    <div class="close-mobile-links-div">
+      <a  href="#" onclick="toggleMenu()" class="close-mobile-links">Close</a>
+    </div>
+    <ul class="mobile-navigation-links-list">
+      <a ><li>Neolithics</li></a>
+      <a href="sancaiWare/sancaiWare.html"><li>San Cai Ware</li></a>
+      <a href='dingWare/dingWare.html'><li>Ding Ware</li></a>
+      <a href='guanWare/guanWare.html'><li>Guan Ware</li></a>
+      <a href='cizhouWare/cizhouWare.html'><li>Ci Zhou Ware</li></a>
+      <a ><li>Ji Zhou Ware</li></a>
+      <a ><li>Qing Bai Ware</li></a>
+      <a href='blancDeChine/blancDeChine.html'><li>Blanc de Chine</li></a>
+      <a href='blueAndWhite/blueAndWhite.html'><li>Blue & White</li></a>
+      <a href='colourWare/colourWare.html'><li>Colour Ceramic</li></a>
+    </ul>
+  </div>
   <div class="mobile-nav">
     <h2 class="mobile-title"><a href="index.html">Virtual Pottery.</a></h2>
-    <a href=""><img class="hamburger-menu" src="img/menu.svg"></a>
+    <a href="#" onclick="toggleMenu()"><img class="hamburger-menu" src="img/menu.svg"></a>
   </div>
 
   <div class="nav">
@@ -58,4 +75,6 @@
       <div class="gallery-card"></div>
     </div>
   </div>
+
+  <script src="lib/menuToggle.js"></script>
 </body>

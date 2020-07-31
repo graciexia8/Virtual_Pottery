@@ -5,6 +5,7 @@
 
 body {
     background-color: #161616;
+    margin:0;
 }
 
 a {
@@ -84,6 +85,7 @@ a:hover {
 .content {
     display: flex;
     flex-direction: row;
+    max-width: 100%;
 }
 
 .content-model {
@@ -106,6 +108,7 @@ a:hover {
     padding-bottom: 50px;
     padding-left: 10px;
     background-color: #161616;  
+    max-width: 100%;
 }
 
 
@@ -213,21 +216,19 @@ a:hover {
   }
 
 .mobile-nav {
-    position: fixed;
-    width: 100vw;
+    position: relative;
+    overflow: hidden;
     background-color: #161616;
     display: none;
-    height: 100 px;
-    text-align: center;
-    justify-content: space-between;
-    margin: auto;
+    height: 50px;
 }
 
 .hamburger-menu {
-    order: -1;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 15px;
 }
 
 .mobile-title {
@@ -236,7 +237,41 @@ a:hover {
     font-size: 22px;
     color: #F2F2F2;
     letter-spacing: 2px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding: 5px 15px;
+}
+
+#mobile-nav-links {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color:black;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.mobile-navigation-links-list {
+    padding-top: 20px;
+    font-family: 'Ubuntu mono';
+    font-weight: 400;
+    font-size: 18px;
+    list-style: none;
+    color: #F2F2F2;
+    letter-spacing: 1px;
+}
+
+.mobile-navigation-links-list li{
+    padding-bottom: 15px;
+}
+
+.close-mobile-links-div {
+    padding: 10px 10px;
+    text-align: end;
+}
+
+.close-mobile-links {
+    font-family: 'Ubuntu mono';
+    font-weight: 400;
+    font-size: 18px;
 }
