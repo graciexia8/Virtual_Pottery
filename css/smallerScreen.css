@@ -65,6 +65,12 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .description {
+        max-width: 350px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     .gallery-card {
         max-width: 250px;
@@ -72,6 +78,18 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .description {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .description {
+        max-width: 250px;
+    }
+
 }
 
 @media only screen and (max-width: 250px) {
@@ -82,4 +100,5 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+
 }
