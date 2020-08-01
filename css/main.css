@@ -200,6 +200,25 @@ a:hover {
     background-size: cover;
 }
 
+#qingbaiWare {
+    background-image: url("../img/qingbaiWare.png");
+    background-size: cover;
+}
+
+#qingbaiWare:hover {
+    background-image: url("../img/qingbaiWare.gif");
+    background-size: cover;
+}
+
+#jizhouWare {
+    background-image: url("../img/jizhouWare.png");
+    background-size: cover;
+}
+
+#jizhouWare:hover {
+    background-image: url("../img/jizhouWare.gif");
+    background-size: cover;
+}
 
 @keyframes fadeIn {
     0% {opacity:0;}
