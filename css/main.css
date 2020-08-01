@@ -220,6 +220,16 @@ a:hover {
     background-size: cover;
 }
 
+#neolithic {
+    background-image: url("../img/neolithic.png");
+    background-size: cover;
+}
+
+#neolithic:hover {
+    background-image: url("../img/neolithic.gif");
+    background-size: cover;
+}
+
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
