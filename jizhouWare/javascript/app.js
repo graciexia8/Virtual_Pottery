@@ -4,7 +4,7 @@ window.InitDemo = async function() {
 	try {
 		const vertexShader = await loadTextResource("./../jizhouWare/Shaders/shader.vs.glsl");
 		const fragmentShader = await loadTextResource("./../jizhouWare/Shaders/shader.fs.glsl");
-		const modelData = await loadJSONResource("./../models/json_models/jizhouWare.json");
+		const modelData = await loadJSONResource("./../models/json_models/jiZhouWare.json");
 		runDemo(vertexShader, fragmentShader, modelData);
 	}
 	catch(e){
