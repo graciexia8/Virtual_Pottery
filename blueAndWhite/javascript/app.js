@@ -62,7 +62,7 @@ var renderScene = function(vertShadertext, fragShadertext, modelText) {
  
 		 // Set the model, view, projection matrices
 		 mat4.identity(modelMatrix);
-		 mat4.lookAt(viewMatrix, [-2, -5, 8], [0, 0, 0], [0, 1, 0]);
+		 mat4.lookAt(viewMatrix, [0, 0, -8], [0, 0, 0], [0, 1, 0]);
 		 mat4.perspective(projMatrix, glMatrix.toRadian(45), self.canvas.clientWidth / self.canvas.clientHeight, 0.1, 1000.0);
 		 
  
